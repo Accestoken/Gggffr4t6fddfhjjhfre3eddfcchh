@@ -1,0 +1,644 @@
+
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>заполнитель</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<style>
+	    th, td, input {
+	        font-size: 13px !important;
+	    }
+	    input {
+	        width: 75px !important;
+	    }
+	    #vkpo {
+	        background-color: #90d777 !important;
+	    }
+	    #vkpo20 {
+	        background-color: #d7ca77 !important;
+	    }
+	    #vpisannoe {
+	        background-color: #b98a53 !important;
+	    }
+	    #outputArea {
+	        width: 100%;
+	    }
+	</style>
+	<script src="jquery-3.7.1.min.js"></script>
+</head>
+	<body>
+    <div class="container-fluid mt-1">
+        <h1 id="errorEd" style="color:red;font-size: 24px;text-align: center">НЕВЕРНО УКАЗАНА ЕДИНИЦА ИЗМЕРЕНИЯ&#10;</h1>
+        <div class="row">
+            <div class="col-2">
+                <button id="full-name-btn" class="btn btn-success mb-1">Полное наименование</button>
+                <input id="for-excel" type="checkbox">Для Excel</input>
+            </div>
+            <div class="col">
+                <textarea id="outputArea"></textarea>
+            </div>
+        </div>
+        <div id="vkpo" class="row">
+            <h2 class="text-center">ШОРТЫ ЛЕТНИЕ</h2>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЛЕТНИЕ</td>
+                        <td class="align-middle item-name">ШОРТЫ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="vkpo20" class="row">
+            <h2 class="text-center">ШОРТЫ ЗИМНИЕ</h2>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ </td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ0</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ0</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ШОРТЫ ЗИМ</td>
+                        <td class="align-middle item-name">ШОРТЫ ЗИМНИЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="vpisannoe" class="row">
+            <h2 class="text-center">ТРУСЫ</h2>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">комплект</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">пара</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">одеяло ведомственное серого цвета</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                    <tr class="item">
+                        <td class="align-middle item-short-name">ТРУСЫ</td>
+                        <td class="align-middle item-name">ТРУСЫ КРАСНЫЕ</td>
+                        <td class="align-middle"><input type="number" class="form-control item-quantity" min=0 /></td>
+                        <td class="align-middle item-variant d-none">штука</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table">
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+		<script>
+            $(document).ready(function() {
+                $('#errorEd').hide();
+                $('.item').each(function() {
+                    $(this).find('.item-short-name').show();
+                    $(this).find('.item-name').hide();
+                })
+                
+                
+                function updateResults() {
+                    var forExcel = $('#for-excel').is(':checked');
+                    if (!forExcel) {
+                        var genText = 'выбросить ';
+                    } else {
+                        var genText = '';
+                    }
+                    var validItems = 0;
+                    
+                    $('.item').each(function() {
+                        var quantity = $(this).find('.item-quantity').val();
+                        if(quantity != null && quantity > 0)
+                        {
+                            validItems++;
+                        }
+                    });
+                    
+                    console.log(validItems);
+                    if(validItems > 0)
+                    {
+                        $('.item').each(function() {
+                            var name = $(this).find('.item-name').text();
+                            var quantity = $(this).find('.item-quantity').val();
+                            var variant = $(this).find('.item-variant').text();
+                            
+                            if(quantity != null && quantity > 0)
+                            {
+                                switch (variant){
+                                    case 'комплект': 
+                                        if (quantity % 10 === 1 && quantity % 100 != 11) {
+                                            variant = 'комплект';
+                                        } else if ((quantity % 10 >= 2 && quantity % 10 <= 4) && (quantity % 100 < 12 || quantity % 100 > 14)) {
+                                            variant = 'комплекта';
+                                        } else {
+                                            variant = 'комплектов';
+                                        }
+                                        break;
+                                    case 'пара':
+                                        if (quantity % 10 === 1 && quantity % 100 != 11) {
+                                            variant = 'пара';
+                                        } else if ((quantity % 10 >= 2 && quantity % 10 <= 4) && (quantity % 100 < 12 || quantity % 100 > 14)) {
+                                            variant = 'пары';
+                                        } else {
+                                            variant = 'пар';
+                                        }
+                                        break;
+                                    case 'штука':
+                                        if (quantity % 10 === 1 && quantity % 100 != 11) {
+                                            variant = 'штука';
+                                        } else if ((quantity % 10 >= 2 && quantity % 10 <= 4) && (quantity % 100 < 12 || quantity % 100 > 14)) {
+                                            variant = 'штуки';
+                                        } else {
+                                            variant = 'штук';
+                                        }
+                                        break;
+                                    default:
+                                        variant = '!!!!!!!!ОШИБКА!!!!!!!!';
+                                        $('#errorEd').show();
+                                        $('#errorEd').text($('#errorEd').text()+' '+name);
+                                        break;
+                                }
+                                
+                                let selector = '';
+                                if(validItems > 1)
+                                {
+                                    selector = ', ';    
+                                } else {
+                                    if (!forExcel){
+                                        selector = '.';
+                                    }
+                                }
+                                
+                                
+                                
+                                if (forExcel) {
+                                    genText = genText+name+';'+quantity+';'+variant+selector;
+                                    var lines = genText.split(', ');
+                                    $('#outputArea').val(lines.join('\n'));
+                                } else {
+                                    genText = genText+name+' – '+quantity+' '+variant+selector;
+                                    $('#outputArea').val(genText);
+                                }
+                                
+                                validItems--;
+                            }
+                        });
+                    } else {
+                        genText = '';
+                        $('#outputArea').val(genText);
+                    }
+                }
+                
+                function showFullName() {
+                    if ($('.item-short-name').is(':visible'))
+                    {
+                        $('#full-name-btn').text('Краткое наименование');
+                        $('.item').each(function() {
+                            $(this).find('.item-short-name').hide();
+                            $(this).find('.item-name').show();
+                        })
+                    } else {
+                        $('#full-name-btn').text('Полное наименование');
+                        $('.item').each(function() {
+                            $(this).find('.item-short-name').show();
+                            $(this).find('.item-name').hide();
+                        })
+                    }
+                }
+                
+                $('.item-quantity').on('input', updateResults);
+                $('#for-excel').on('click', updateResults);
+                $('#full-name-btn').on('click', showFullName);
+            });
+	    </script>
+	</body>
+</html>
